@@ -35,17 +35,16 @@ global with sharing class G2O_ScheduledObjectDeletion_SVC{
    
     //C.O.N.S.T.R.U.C.T.O.R
     global G2O_ScheduledObjectDeletion_SVC(){
-          totalRows = 1;//As one row is already created by its scheduler class G2O_ScheduledObjectDeletion_SVC_SCH  
-                        //which basically update the values in the custom setting ScheduledJobParameters__c  
+          totalRows = 1;//As one row is already created by its scheduler class G2O_ScheduledObjectDeletion_SVC_SCH
+                        //which basically update the values in the custom setting ScheduledJobParameters__c
     }
     
     public boolean deleteApexCalloutLog(){
         if(totalRows < 10000 && DELETE_APEXCALLOUTLOG){
             deletionList = [select id from ApexCalloutLog__c where createddate < :DateTime.now().addhours(-1*GRACE_PERIOD_FOR_APEXCALLOUTLOG) limit :(10000 - totalRows)];
             totalRows += deletionList.size();
-            System.debug(totalRows +'-------------------------');
             srList = Database.delete(deletionList, false);
-            System.debug(srList.size()+'__________________________');
+           
             for (integer i = 0; i < srList.size(); i++) {
                 if (!srList[i].isSuccess()) { 
                     system.debug(logginglevel.warn, 'ERROR: ' + srList[i]);
