@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label><!-- Marketo Lead Management --></label>
+        <name>Marketo</name>
+    </customApplications>
+    <customTabs>
+        <label><!-- About Marketo --></label>
+        <name>AboutMarketo</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Marketo Lead Management --></label>
+        <name>Marketo</name>
+    </customTabs>
+</Translations>
