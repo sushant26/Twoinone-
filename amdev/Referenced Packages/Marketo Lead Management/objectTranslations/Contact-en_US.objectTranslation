@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>Acquisition Date</label>
+        <name>Acquisition_Date__c</name>
+    </fields>
+    <fields>
+        <label>Acquisition Program Id</label>
+        <name>Acquisition_Program_Id__c</name>
+    </fields>
+    <fields>
+        <label>Acquisition Program</label>
+        <name>Acquisition_Program__c</name>
+    </fields>
+    <fields>
+        <label>Inferred City</label>
+        <name>Inferred_City__c</name>
+    </fields>
+    <fields>
+        <label>Inferred Company</label>
+        <name>Inferred_Company__c</name>
+    </fields>
+    <fields>
+        <label>Inferred Country</label>
+        <name>Inferred_Country__c</name>
+    </fields>
+    <fields>
+        <label>Inferred Metropolitan Area</label>
+        <name>Inferred_Metropolitan_Area__c</name>
+    </fields>
+    <fields>
+        <label>Inferred Phone Area Code</label>
+        <name>Inferred_Phone_Area_Code__c</name>
+    </fields>
+    <fields>
+        <label>Inferred Postal Code</label>
+        <name>Inferred_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label>Inferred State Region</label>
+        <name>Inferred_State_Region__c</name>
+    </fields>
+    <fields>
+        <label>Lead Score</label>
+        <name>Lead_Score__c</name>
+    </fields>
+    <fields>
+        <label>Original Referrer</label>
+        <name>Original_Referrer__c</name>
+    </fields>
+    <fields>
+        <label>Original Search Engine</label>
+        <name>Original_Search_Engine__c</name>
+    </fields>
+    <fields>
+        <label>Original Search Phrase</label>
+        <name>Original_Search_Phrase__c</name>
+    </fields>
+    <fields>
+        <label>Original Source Info</label>
+        <name>Original_Source_Info__c</name>
+    </fields>
+    <fields>
+        <label>Original Source Type</label>
+        <name>Original_Source_Type__c</name>
+    </fields>
+</CustomObjectTranslation>
